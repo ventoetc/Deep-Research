@@ -2,25 +2,30 @@
 
 ## Fastest Way: Deploy to Vercel Now
 
-1. **Add your API keys to `.env.local`**:
-   ```bash
-   # Edit .env.local and replace with your keys:
-   OPENAI_API_KEY=sk-...your-actual-key...
-   FIRECRAWL_KEY=fc-...your-actual-key...
-   ```
+**No file editing needed!** The app has a built-in API key dialog.
 
-2. **Push to GitHub**:
-   ```bash
-   git push
-   ```
-
-3. **Deploy on Vercel**:
+1. **Deploy on Vercel**:
    - Visit [vercel.com/new](https://vercel.com/new)
    - Sign in with GitHub
    - Import this repository
-   - Add the same environment variables from `.env.local`
-   - Click Deploy
+   - Click Deploy (no environment variables needed!)
    - ✅ Live in ~90 seconds!
+
+2. **Use it**:
+   - Visit your deployed site
+   - Enter your OpenAI and FireCrawl API keys in the dialog
+   - Start researching!
+
+## Alternative: Pre-configure API Keys (Optional)
+
+If you want to disable the API key dialog and use server-side keys:
+
+1. Add environment variables in Vercel:
+   - `OPENAI_API_KEY=sk-...`
+   - `FIRECRAWL_KEY=fc-...`
+   - `NEXT_PUBLIC_ENABLE_API_KEYS=false`
+
+2. Redeploy
 
 ## Or Test Locally First
 
